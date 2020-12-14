@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Useless and Usefull App</title>
+	<style type="text/css">
+		body{
+			background-color: #f0f0f0;
+		}
+		.container{
+			margin: 10px 350px 0 390px;
+			background-color: #fff;
+			padding: 30px;
+			text-align: center;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h2 id="text">Click On Light to On the Bulb</h2>
+		<button onclick="onLight();">On Light</button>
+		<img src="pic_bulboff.gif" alt="LightOff" id="pic">
+		<button onclick="offLight();">Off Light</button>
+	</div>
+	<script type="text/javascript">
+		function onLight(){
+			document.getElementById('text').innerHTML = "The Light Is On";
+			document.getElementById('pic').src = "pic_bulbon.gif";
+			document.getElementById('text').style = "color:green";
+			
+			}
+
+		function offLight(){
+			document.getElementById('pic').src = "pic_bulboff.gif";
+			document.getElementById('text').innerHTML = "The Light Is Off";
+			document.getElementById('text').style.color = "red";
+
+		}
+	</script>
+
+</body>
+</html>
